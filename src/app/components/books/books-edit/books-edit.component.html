@@ -1,0 +1,64 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1> {{data.name}} ({{data.category}})</h1>
+      </mat-panel-title>
+      <mat-panel-description>
+        <div *ngIf="panelOpenState; else elseBlock">
+          <button mat-button color="primary">
+            <i class="material-icons">
+              close
+            </i>
+            <p>CLOSE</p>
+          </button>
+        </div>
+        <ng-template #elseBlock>
+          <button mat-button color="primary">
+            <i class="material-icons">
+            menu
+            </i>
+            <p>EDIT</p>
+          </button>
+        </ng-template>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="edit-book-wrapper">
+
+      <div class="edit-book-box">
+        <div class="edit-book-box-body">
+
+          <form [formGroup]="editBookForm" class="edit-book-form" (submit)="onFormSubmitted()">
+
+            <input type="hidden" formControlName="id">
+            <input placeholder="Name" type="text" formControlName="name">
+            <input placeholder="Category" type="text" formControlName="category">
+
+            <button mat-button color="primary">
+              <i class="material-icons">
+                done
+              </i>
+              <p>CONFIRM CHANGES</p>
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <mat-action-row>
+      <div class="dilate"></div>
+      <div class="button-group">
+        <button class="delete" mat-button color="warn" (click)="openDialog()">
+          <i class="material-icons">
+            delete_forever
+          </i>
+          <p>DELETE</p>
+        </button>
+      </div>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+
+

@@ -1,0 +1,11 @@
+
+<ul *ngIf="dataSource.length>0; else elseBlock" >
+  <li *ngFor="let data of dataSource">
+      <app-books-edit [data]="data"></app-books-edit>
+  </li>
+</ul>
+<ng-template #elseBlock>
+
+  <p CLASS="empty-database"> NO BOOKS IN THE DATABASE YET. TRY ADDING SOME NEW BOOKS :) </p>
+
+</ng-template>

@@ -1,0 +1,36 @@
+<div class="new-book-wrapper">
+
+  <div class="new-book-box">
+    <div class="new-book-box-body">
+
+      <div class="title">
+
+        ADDING A NEW BOOK TO COLLECTION
+
+      </div>
+
+      <form [formGroup]="addBookForm" class="new-book-form" (submit)="onFormSubmitted()">
+
+        <div class="input-wrapper">
+          <span class="label">Name : </span>
+        <input placeholder="Name" type="name" formControlName="name">
+        </div>
+        <div class="input-wrapper">
+          <span class="label">Category : </span>
+        <input placeholder="Category" type="category" formControlName="category">
+        </div>
+
+
+
+        <button mat-button color="primary">
+          <i class="material-icons">
+            done
+          </i>
+          <p>ADD NEW BOOK</p>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+</div>

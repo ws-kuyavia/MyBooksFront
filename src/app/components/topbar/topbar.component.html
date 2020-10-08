@@ -1,0 +1,30 @@
+<header class="main-header">
+  <h1><a routerLink="/">MY BOOKS</a></h1>
+  <div class="header-content">
+    <ul class="menu">
+      <li class="menu-element">
+        <a routerLink="/books/create">
+          <i class="material-icons">
+            add_circle
+          </i>
+          <p>ADD A NEW BOOK</p>
+        </a>
+      </li>
+      <li class="menu-element">
+        <a routerLink="/books/list">
+          <i class="material-icons">
+            list
+          </i>
+          <p>BOOKS LIST</p>
+        </a>
+      </li>
+    </ul>
+    <div class="logout" (click)="onLogoutClick()">
+      <i class="material-icons">
+        power_settings_new
+      </i>
+      <p>Logout</p>
+    </div>
+  </div>
+
+</header>

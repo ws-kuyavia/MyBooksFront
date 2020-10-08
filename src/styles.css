@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/components/books/books-edit/books-edit.component.css";
+@import "./app/components/books/books-list/books-list.component.css";
+@import "./app/components/books/books-create/books-create.component.css";
+@import "./app/components/topbar/topbar.component.css";
+@import "./app/components/login/login.component.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{text-decoration: none}
+h1{font-size: larger}

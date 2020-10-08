@@ -1,0 +1,32 @@
+app-books-create .new-book-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+app-books-create .new-book-wrapper form.new-book-form .input-wrapper,
+app-books-create .new-book-wrapper form.new-book-form button {
+
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+
+}
+
+app-books-create .new-book-wrapper form.new-book-form .input-wrapper{
+  text-align: center;
+}
+app-books-create .new-book-wrapper form.new-book-form .input-wrapper span,
+app-books-create .new-book-wrapper form.new-book-form .input-wrapper input{
+  text-align: left;
+}
+
+app-books-create .new-book-box-body .title {
+
+  margin: 20px auto;
+  text-align: center;
+}
+app-books-create .new-book-box-body img {
+
+  display: block;
+  margin: auto auto;
+}

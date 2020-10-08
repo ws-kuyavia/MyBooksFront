@@ -1,0 +1,35 @@
+<div class="login-wrapper">
+  <div class="login-box">
+    <div class="login-box-body">
+
+        <div class="login-card-logo">
+
+        </div>
+
+      <div class="title">
+
+        LOGIN TO MYBOOKS
+
+      </div>
+
+      <div><span>default pass: qwerty1</span></div>
+      <div><span>default user: apiuser@kuyavia.pl  </span></div>
+      <form [formGroup]="loginForm" class="login-form" (submit)="onFormSubmitted()">
+        <div class="input-wrapper">
+          <span class="label">Your e-mail : </span>
+          <input placeholder="Email" type="email" formControlName="email">
+        </div>
+        <div class="input-wrapper">
+          <span class="label">Password : </span>
+          <input placeholder="Password" type="password" formControlName="password">
+        </div>
+
+        <button mat-raised-button color="primary">
+          LOGIN
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+</div>

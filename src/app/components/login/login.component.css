@@ -1,0 +1,41 @@
+app-login .login-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+app-login .login-wrapper form.login-form .input-wrapper,
+app-login .login-wrapper form.login-form button {
+
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+
+}
+
+app-login .login-wrapper form.login-form .input-wrapper{
+  text-align: center;
+}
+app-login .login-wrapper form.login-form .input-wrapper span,
+app-login .login-wrapper form.login-form .input-wrapper input{
+  text-align: left;
+}
+
+app-login .login-box-body .title {
+  margin: 20px auto;
+  text-align: center;
+}
+
+app-login .login-box-body {
+  display: block;
+  margin: auto auto;
+}
+
+app-login .login-card-logo {
+  background-image: url("/assets/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: padding-box;
+  background-position: center;
+  padding: 20% 50%;
+  margin-bottom: 1rem;
+}

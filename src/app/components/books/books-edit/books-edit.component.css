@@ -1,0 +1,36 @@
+/*app-books-edit .mat-expansion-panel-header-description button i,*/
+/*app-books-edit .mat-expansion-panel-header-description button p,*/
+/*app-books-edit .mat-action-row button i,*/
+/*app-books-edit .mat-action-row button p {*/
+/*  display:inline;*/
+/*}*/
+app-books-edit .mat-button-wrapper i,
+app-books-edit .mat-button-wrapper p{
+  display:inline;
+}
+
+app-books-edit .mat-action-row button.delete{
+ margin: 0 auto;
+}
+app-books-edit .mat-action-row .button-group, app-books-edit .mat-action-row .dilate{
+display: flex;
+}
+app-books-edit .mat-expansion-panel-header-description,
+app-books-edit .mat-action-row .button-group{
+  flex-grow:1;
+  margin: 0 auto;
+}
+app-books-edit .mat-expansion-panel-header-title, app-books-edit .mat-expansion-panel-header-description
+app-books-edit .mat-action-row .button-group, app-books-edit .mat-action-row .dilate{
+  flex-basis: 0;
+}
+/**
+This here is quite slopy and I mark it as
+@TODO it should be rewritren to match the margin of a title element
+  while refactoring the whole thing to sass or scss
+ */
+app-books-edit .mat-expansion-panel-header-description .ng-star-inserted>button {
+
+  margin-top: 20px;
+
+}

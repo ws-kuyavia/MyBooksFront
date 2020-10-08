@@ -1,0 +1,16 @@
+app-books-list>ul>li {
+
+  list-style: none;
+}
+app-books-list>ul{
+padding: 0.5%;
+}
+
+app-books-list p.empty-database {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 49%;
+  bottom: 49%;
+}
+
